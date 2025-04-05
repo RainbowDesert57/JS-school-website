@@ -1,0 +1,57 @@
+body {
+        background: radial-gradient(circle at 10% 20%, rgba(85, 26, 139, 0.3), transparent 50%),
+                    radial-gradient(circle at 70% 80%, rgba(75, 0, 130, 0.3), transparent 50%),
+                    radial-gradient(circle at 30% 60%, rgba(138, 43, 226, 0.3), transparent 50%),
+                    radial-gradient(circle at 90% 40%, rgba(75, 0, 130, 0.3), transparent 50%),
+                    #000;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1 {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+#aboutLink {
+    padding: 80px 107px;
+    text-decoration: none;
+    color: rgb(224, 225, 221);
+    font-size: 28px;
+    background: linear-gradient(to top right, rgb(27, 38, 59), rgb(65, 90, 119));
+    position: absolute;
+    top: 50mm;
+    border-radius: 4mm;
+    border: 0cm;
+    transition: background ease-in-out 0.3s;
+}
+#busLink {
+    padding: 80px 120px;
+    background: linear-gradient(to top right, rgb(27, 38, 59), rgb(65, 90, 119));
+    border-radius: 4mm;
+    position: absolute;
+    top: 50mm;
+    left: 15mm;
+    text-decoration: none;
+    color: rgb(224, 225, 221);
+    font-size: 28px;
+    border: 0cm;
+}
+#educationLink {
+    padding: 80px 102px;
+    background: linear-gradient(to top right, rgb(27, 38, 59), rgb(65, 90, 119));
+    border-radius: 4mm;
+    position: absolute;
+    top: 50mm;
+    right: 15mm;
+    text-decoration: none;
+    color: rgb(224, 225, 221);
+    font-size: 28px;
+    border: 0cm;
+}

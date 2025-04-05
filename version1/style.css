@@ -1,0 +1,127 @@
+body {
+  background: radial-gradient(
+      circle at 10% 20%,
+      rgba(85, 26, 139, 0.5),
+      transparent 35%
+    ),
+    radial-gradient(circle at 70% 80%, rgba(75, 0, 130, 0.5), transparent 29%),
+    radial-gradient(circle at 30% 60%, rgba(138, 43, 226, 0.5), transparent 29%),
+    radial-gradient(circle at 90% 40%, rgba(75, 0, 130, 0.5), transparent 29%),
+    #000;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+h1 {
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 50px;
+  animation-name: schAnimation;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+}
+img {
+  clip-path: circle(45% at 50% 50%);
+  position: absolute;
+  top: 150px;
+  height: 150px;
+  animation-name: imgAnimation;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+#aboutLink {
+  padding: 80px 107px;
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+  background: linear-gradient(
+    to top right,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.05)
+  );
+  position: absolute;
+  top: 115mm;
+  border-radius: 4mm;
+  border: 0cm;
+}
+#busLink {
+  padding: 80px 120px;
+  background: linear-gradient(
+    to top right,
+    rgb(255, 255, 255, 0.05),
+    rgb(255, 255, 255, 0.05)
+  );
+  border-radius: 4mm;
+  position: absolute;
+  top: 115mm;
+  left: 15mm;
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+  border: 0cm;
+}
+#educationLink {
+  padding: 80px 102px;
+  background: linear-gradient(
+    to top right,
+    rgb(255, 255, 255, 0.05),
+    rgb(255, 255, 255, 0.05)
+  );
+  border-radius: 4mm;
+  position: absolute;
+  top: 115mm;
+  right: 15mm;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  border: 0cm;
+}
+button {
+  animation-name: buttonAnimation;
+  transform: translateY(100%);
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.3s;
+  backdrop-filter: blur(10px) saturate(125%);
+}
+@keyframes buttonAnimation {
+  0% {
+    transform: translateY(100%);
+    opacity: 0%;
+  }
+  15% {
+    opacity: 0%;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 100%;
+  }
+}
+@keyframes schAnimation {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 100%;
+  }
+}
+#busLink:hover {
+  box-shadow: 0px 0px 30px 1px rgb(255, 255, 255);
+  transition: 0.1ms;
+}
+#educationLink:hover {
+  box-shadow: 0px 0px 30px 1px rgb(255, 255, 255);
+  transition: 0.01ms;
+}
+#aboutLink:hover {
+  box-shadow: 0px 0px 30px 1px rgb(255, 255, 255);
+  transition: 0.1ms;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Delhi Public School, Chandigarh</h1>
+    <div class="container">
+      <img
+        src="https://scontent.fixc1-3.fna.fbcdn.net/v/t39.30808-6/292242502_426528982820589_1035359598006881243_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=AEcM_gzDs20Q7kNvwE8MWKz&_nc_oc=Adn_dNOtSAipJV3iVz0YvXO7P4XpyndGVgof6mxKVpU3TnvX78Ymf6iwgiwo934zoIAWKEzfDAR9g2k7WyYWyObZ&_nc_zt=23&_nc_ht=scontent.fixc1-3.fna&_nc_gid=aNudd0X8QnNG4mtn3ojz1w&oh=00_AYGFLf6j2H_bAE2v1z4_jnNY_aANOlnCXO_91EnCUg6-Fw&oe=67F66BD8"
+        alt="DPS"
+      />
+    </div>
+    <div class="container">
+      <button href="#" id="aboutLink">About Us</button>
+    </div>
+    <div class="buttons">
+      <button href="#" id="busLink">Busses</button>
+      <button href="#" id="educationLink">Education</button>
+    </div>
+    <!--hover animation-->
+    <script type="text/javascript" src="/version2/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector("#aboutLink"), {
+        max: 25,
+        speed: 10000,
+      });
+    </script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector("#busLink"), {
+        max: 25,
+        speed: 10000,
+      });
+    </script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector("#educationLink"), {
+        max: 25,
+        speed: 10000,
+      });
+    </script>
+  </body>
+</html>
